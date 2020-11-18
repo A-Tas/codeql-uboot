@@ -1,5 +1,5 @@
 import cpp
 
 from MacroInvocation macro 
-where macro.getMacro().getName().regexpMatch("ntohl*") 
-select macro, "found" + macro.getMacro().getName()
+where macro.getMacro().getName().regexpMatch("ntoh.*") 
+select macro, "found " + macro.getMacro().getName()
